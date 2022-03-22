@@ -28,6 +28,8 @@ describe('The "About" component', () => {
   it('should have the img', () => {
     renderWithRouter(<App />, { route: '/about' });
 
-    expect(screen.getByRole('img').src).toBe(IMG_URL);
+    const teste = screen.getByRole('img');
+
+    expect(teste.src).toBe(IMG_URL);
   });
 });

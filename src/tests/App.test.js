@@ -23,7 +23,7 @@ describe('The "App" component', () => {
     userEvent.click(home);
 
     expect(
-      screen.getByRole('heading', { level: 1, name: 'Pokédex' }),
+      screen.getByRole('heading', { level: 2, name: /Encountered pokémons/i }),
     ).toBeInTheDocument();
   });
   it(`should redirect to the about page on the path "/about" if the
@@ -53,8 +53,6 @@ describe('The "App" component', () => {
   it(`should redirect to the not found page if a path that do not
   exist is entered`, () => {
     renderWithRouter(<App />, { route: '/dont-exist' });
-
-    console.log(window.location.pathname);
 
     expect(
       screen.getByRole('heading', {
