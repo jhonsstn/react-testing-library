@@ -5,7 +5,7 @@ import App from '../App';
 
 const IMG_URL = 'https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif';
 
-describe('The "App" component', () => {
+describe('The "NotFound" component', () => {
   it('should have the "Page requested not found" message.', () => {
     renderWithRouter(<App />, { route: '/dont-exist' });
 

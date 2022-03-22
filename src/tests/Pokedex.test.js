@@ -8,7 +8,7 @@ const haveDuplicates = (array) => array.length !== new Set(array).size;
 
 const next = 'next-pokemon';
 
-describe('The "About" component', () => {
+describe('The "Pokedex" component', () => {
   it('should have the "Encountered pokémons" title on the screen', () => {
     renderWithRouter(<App />);
 
